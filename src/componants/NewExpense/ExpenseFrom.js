@@ -22,7 +22,7 @@ const ExpenseFrom = (props) => {
 
         const expenseData = {
             title: enteredTitle,
-            amount: enteredAmoun,
+            amount: +enteredAmoun,
             date: new Date(enteredDate),
         }
         props.onSaveData(expenseData)
